@@ -1,0 +1,117 @@
+body{
+    direction: rtl;
+    font-family: "Tajawal";
+    padding: 2% 5%; /* TRBL */
+}
+a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+p{
+    line-height: 1.5;
+}
+.header{
+    border-bottom-style: solid;
+    border-bottom-width: 0.01cm;
+    border-bottom-color: #F2F2F5;
+}
+.logo{
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* color: #FFCB21; */
+}
+.tabs{
+    text-justify: l;
+    float: left;
+}
+.container{
+    padding: 5% 7%; /* TRBL */
+}
+.greyContainer{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    background-color: #F2F2F5;
+    border-radius: 0.2cm;
+}
+.insideGreyContainer{
+    padding-right: 4%;
+}
+.formContainer{
+    padding: 2% 5%;
+}
+.insideFormContainer{
+    padding: 2% 5%;
+}
+.divPadding{
+    padding-bottom: 20px;
+}
+.input{
+    width: 100%;
+    border-style: solid;
+    border-color: #F2F2F5;
+    border-radius: 0.1cm;
+    border-width: 0.02cm;
+    height: 30px;
+}
+select{
+    font-family: "Tajawal";
+    width: 100%;
+    border-style: solid;
+    border-color: #F2F2F5;
+    border-radius: 0.1cm;
+    border-width: 0.02cm;
+    height: 30px;
+    padding-right: 20px;
+}
+.socialAccount{
+    width: 30%;
+    display: inline;
+}
+.inline{
+    width: 69%;
+    border-style: solid;
+    border-color: #F2F2F5;
+    border-radius: 0.1cm;
+    border-width: 0.02cm;
+    height: 30px;
+    display: inline;
+    float: left;
+}
+.inputArea{
+    width: 100%;
+    border-style: solid;
+    border-color: #F2F2F5;
+    border-radius: 0.1cm;
+    border-width: 0.02cm;
+    height: 90px;
+}
+
+.red{
+    color: #FF5C5C;
+}
+
+.button{
+    /* margin-top: 5px; */
+    margin-bottom: 30px;
+    font-family: "Tajawal";
+    background-color: #FFCB21;
+    /* box-shadow: 5px 5px 4px lightgray; */
+    border: none;
+    width: 120px;
+    border-radius: 0.1cm;
+    height: 30px;
+}
+.button:hover{
+    background-color: #65A7C3;
+    color: white;
+}
+.leftFloat{
+    float: left;
+}
+/* @media screen and (max-width: 800px) {
+    .left, .main, .right {
+        width: 100%; 
+    }
+} */
