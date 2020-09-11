@@ -2,6 +2,7 @@ body{
     direction: rtl;
     font-family: "Tajawal";
     padding: 2% 5%; /* TRBL */
+    color: red;
 }
 a{
     display: inline;
