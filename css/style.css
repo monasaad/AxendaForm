@@ -6,7 +6,7 @@ body{
 a{
     display: inline;
     text-decoration: none;
-    color: black;
+    color: grey;
 }
 p{
     line-height: 1.5;
@@ -23,7 +23,7 @@ p{
     /* color: #FFCB21; */
 }
 .tabs{
-    text-justify: l;
+    /*text-justify: l;*/
     float: left;
 }
 .container{
