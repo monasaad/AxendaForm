@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title> <!--TODO-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tajawal">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <a href="index.html" class="logo"> اكسندا</a>
+    <span class="tabs">
+            <a href="about.html">من نحن</a>
+            <a href="#">تواصل معنا</a>
+        </span>
+</header>
+
+<div class="container">
+    <div class="greyContainer">
+        <span class="insideGreyContainer">تواصل معنا الآن!🌟</span>
+    </div>
+    <div class="formContainer">
+        <p>يمكنك التواصل معنا عبر حسابنا بتويتر
+        <a href="https://twitter.com/AxendaTeam" style="text-decoration: underline">
+            AxendaTeam
+        </a></p>
+        <p>أو اكتب رسالتك لنا عبر هذا النموذج.</p>
+
+        <div class="insideFormContainer">
+            <form action="">
+                <div class="divPadding">فئة الرسالة <span class="red">*</span>
+                    <select name="msgtype" required>
+                        <option value="suggestion">اقتراح</option>
+                        <option value="other">أخرى</option>
+                    </select>
+                </div>
+
+                <div class="divPadding">بريدك الإلكتروني <span class="red">*</span>
+                    <input class="input" type="email" required>
+                </div>
+
+
+                <div class="divPadding"> الرسالة<span class="red">*</span>
+                    <input class="inputArea" name="msg" type="text" required>
+                </div>
+                <input class="button" type="reset" value="مسح الكل">
+                <input class="button leftFloat" type="submit" value="إرسال">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
