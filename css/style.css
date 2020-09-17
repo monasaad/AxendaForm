@@ -11,6 +11,8 @@ a{
 p{
     line-height: 1.5;
 }
+
+/**************** header style ****************/
 .header{
     border-bottom-style: solid;
     border-bottom-width: 0.01cm;
@@ -22,31 +24,79 @@ p{
     font-weight: bold;
     /* color: #FFCB21; */
 }
-.tabs{
+.nav-tabs{
     /*text-justify: l;*/
     float: left;
 }
+
+/**************** main container style ****************/
+
 .container{
-    padding: 5% 7%; /* TRBL */
+    padding-top: 5%;
+    /*padding: 5% 7%;!* TRBL *!*/
 }
-.greyContainer{
+
+/**************** main tabs style ****************/
+.main-tabs{
+    width: 50%;
+    height: 6.5%;
     font-size: 1.5rem;
     font-weight: 1000;
-    background-color: #F2F2F5;
-    border-radius: 0.2cm;
+    border-top-left-radius: 0.2cm;
+    border-top-right-radius: 0.2cm;
+    display: inline-block;
 }
-.insideGreyContainer{
+
+.yellow-tab{
+    background-color: #FFCB21;
+}
+
+.grey-tab{
+    background-color: #F2F2F5;
+}
+
+/*.grey-tab:hover{*/
+/*    background-color: #A8D2E3;*/
+/*}*/
+
+.inside-tab{
     padding-right: 4%;
 }
-.formContainer{
+
+/**************** form main container style ****************/
+.form-container{
+    padding: 2% 5%;
+    border-style: solid;
+    border-width: 0cm 0.01cm 0.01cm 0.01cm; /*TRBL*/
+    border-color: #F2F2F5;
+}
+
+/**************** inside form main container style ****************/
+.inside-form-container{
     padding: 2% 5%;
 }
-.insideFormContainer{
-    padding: 2% 5%;
-}
-.divPadding{
+
+.input-spans{
+    display: inline-block;
     padding-bottom: 20px;
+    width: 49%;
 }
+.input-spans-left{
+    display: inline-block;
+    padding-bottom: 20px;
+    width: 49%;
+    float: left;
+}
+.area-span{
+    display: inline-block;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.red{
+    color: #FF5C5C;
+}
+
 input{
     width: 100%;
     border-style: solid;
@@ -56,6 +106,7 @@ input{
     height: 30px;
     -webkit-appearance: none;
 }
+
 select{
     font-family: "Tajawal";
     width: 100%;
@@ -71,36 +122,24 @@ select{
     background-repeat: no-repeat;
     -webkit-appearance: none;
 }
-.socialAccount{
+
+.social-account{
     width: 30%;
-    display: inline;
+    display: inline-block;
 }
-.inline{
-    width: 69%;
-    /*border-style: solid;*/
-    /*border-color: #F2F2F5;*/
-    /*border-radius: 0.1cm;*/
-    /*border-width: 0.02cm;*/
-    /*height: 30px;*/
-    /*display: inline;*/
-    float: left;
-}
-.inputArea{
+
+.input-area{
     width: 100%;
-    /*border-style: solid;*/
-    /*border-color: #F2F2F5;*/
-    /*border-radius: 0.1cm;*/
-    /*border-width: 0.02cm;*/
     height: 90px;
 }
 
-.red{
-    color: #FF5C5C;
+.left-float{
+    float: left;
 }
 
 .button{
-    /* margin-top: 5px; */
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-family: "Tajawal";
     background-color: #FFCB21;
     /* box-shadow: 5px 5px 4px lightgray; */
@@ -110,15 +149,34 @@ select{
     height: 30px;
     -webkit-appearance: none;
 }
+
 .button:hover{
     background-color: #65A7C3;
     color: white;
 }
-.leftFloat{
-    float: left;
-}
-/* @media screen and (max-width: 800px) {
-    .left, .main, .right {
-        width: 100%; 
+
+
+/**************** RESPONSIVE ****************/
+@media screen and (max-width: 800px) {
+    body{
+        font-size: 0.9rem;
     }
-} */
+    .container{
+        padding-top: 8%;
+    }
+    .main-tabs{
+        display: inline-block;
+        width: 50%;
+        height: 5%;
+        font-size: 1.2rem;
+        /*border-radius: 0.2cm;*/
+    }
+    .input-spans, .input-spans-left{
+        display: block;
+        width: 100%;
+    }
+    .button{
+        margin-top: 10px;
+    }
+
+}
