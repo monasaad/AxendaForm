@@ -10,13 +10,13 @@
 <body>
 <header class="header">
     <a href="#" class="logo"> اكسندا</a>
-    <span class="nav-tabs">
+    <span class="left-float">
             <a href="about.html">من نحن</a>
             <a href="contact.html">تواصل معنا</a>
         </span>
 </header>
 <div class="container">
-<!--    main tabs -->
+    <!--    main tabs -->
     <div class="main-tabs yellow-tab" id="media-tab" onclick="showMediaForm()">
         <span class="inside-tab"> شارك الوسائط! 🌟</span>
     </div>
@@ -24,18 +24,21 @@
         <span class="inside-tab"> انضم لسفرائنا! 🌟</span>
     </div>
 
-<!--   media form main container -->
-    <section id="media" >
+    <!--   media form main container -->
+    <section id="media">
         <div class="form-container">
-            <p>من خلال هذا النموذج ندعوك لتكون سفير لاكسندا، إذا كنت من أي تخصص وبأي جامعة، سواءً كنت طالب/ـة أو خرّيج/ـة؛
-                بالتأكيد هناك من الطلاب/الطالبات المستجدين من يحتاج مساعدتك وسؤالك عن تخصصك أو جامعتك. بانضمامك معنا ستكون
+            <p>من خلال هذا النموذج ندعوك لتكون سفير لاكسندا، إذا كنت من أي تخصص وبأي جامعة، سواءً كنت طالب/ـة أو
+                خرّيج/ـة؛
+                بالتأكيد هناك من الطلاب/الطالبات المستجدين من يحتاج مساعدتك وسؤالك عن تخصصك أو جامعتك. بانضمامك معنا
+                ستكون
                 يد عون لهم</p>
-            <p class="red">عبر تعبئتك للنموذج ومن ثمّ قبولك معنا؛ ستظهر معلوماتك وحسابك بتويتر عبر قائمة البحث لسفرائنا، ويمكن للمستجدين
+            <p class="red">عبر تعبئتك للنموذج ومن ثمّ قبولك معنا؛ ستظهر معلوماتك وحسابك بتويتر عبر قائمة البحث لسفرائنا،
+                ويمكن للمستجدين
                 البحث عن تخصصك أو جامعتك ليكون التواصل معك عبر حسابك بتويتر.</p>
             <!--        inside media form main container -->
-            <!--        <div class="inside-form-container">-->
-            <!--            TODO: form action-->
-            <form action="" method="">
+            <div class="inside-form-container">
+                <!--            TODO: form action-->
+                <form action="" method="">
                 <span class="input-spans-left">
                     <label>الجامعة <span class="red">*</span></label>
                     <select name="university" required>
@@ -44,7 +47,7 @@
                     </select>
                 </span>
 
-                <span class="input-spans">
+                    <span class="input-spans">
                     <label>التخصص <span class="red">*</span></label>
                     <select name="major" required>
                         <option value="computer science">علوم الحاسب</option>
@@ -52,61 +55,65 @@
                     </select>
                 </span>
 
-                <span class="input-spans" id="media-type">
+                    <span class="input-spans" id="media-type">
                     <label>نوع الوسائط<span class="red">*</span></label>
                     <br>
                     <span id="social">
                         <select name="social-account" class="social-account" required>
                             <option value="video">فيديو</option>
-                            <option value="audio">صوت</option>
+                            <option value="audio">بودكاست</option>
                             <option value="article">مقالة</option>
                         </select>
-                        <input class="left-float" style="width: 69%;" name="social-account" type="text" required>
+                        <input class="left-float" style="width: 69%;" name="social-account"
+                               placeholder="اضف رابط الوسائط هنا" type="text" required>
                     </span>
-                    <!--                TODO: write js function for this button to insert the above span with id social-account-->
+                        <!--                TODO: write js function for this button to insert the above span with id social-account-->
                     <input class="button" type="button" value="إضافة وسائط أخرى" onclick="myFunction()">
                 </span>
 
-<!--                <span class="input-spans-left" id="media-note">-->
-<!--                    <label>ملاحظة على الوسائط </label>-->
-<!--                    <input class="input" type="text">-->
-<!--                </span>-->
+                    <!--                <span class="input-spans-left" id="media-note">-->
+                    <!--                    <label>ملاحظة على الوسائط </label>-->
+                    <!--                    <input class="input" type="text">-->
+                    <!--                </span>-->
 
-                <span class="area-span">
+                    <span class="area-span">
                     <label> ملاحظة / اقتراح</label>
                     <input class="input-area" name="suggestion" type="text">
                 </span>
 
-                <input class="button" type="reset" value="مسح الكل">
-                <input class="button left-float" type="submit" value="إرسال">
-            </form>
-            <!--        </div>-->
+                    <input class="button" type="reset" value="مسح الكل">
+                    <input class="button left-float" type="submit" value="إرسال">
+                </form>
+            </div>
         </div>
     </section>
 
-<!--   ambassador form main container -->
+    <!--   ambassador form main container -->
     <section id="ambassador" style="display: none">
         <div class="form-container">
-            <p>من خلال هذا النموذج ندعوك لتكون سفير لاكسندا، إذا كنت من أي تخصص وبأي جامعة، سواءً كنت طالب/ـة أو خرّيج/ـة؛
-                بالتأكيد هناك من الطلاب/الطالبات المستجدين من يحتاج مساعدتك وسؤالك عن تخصصك أو جامعتك. بانضمامك معنا ستكون
+            <p>من خلال هذا النموذج ندعوك لتكون سفير لاكسندا، إذا كنت من أي تخصص وبأي جامعة، سواءً كنت طالب/ـة أو
+                خرّيج/ـة؛
+                بالتأكيد هناك من الطلاب/الطالبات المستجدين من يحتاج مساعدتك وسؤالك عن تخصصك أو جامعتك. بانضمامك معنا
+                ستكون
                 يد عون لهم</p>
-            <p>عبر تعبئتك للنموذج ومن ثمّ قبولك معنا؛ ستظهر معلوماتك وحسابك بتويتر عبر قائمة البحث لسفرائنا، ويمكن للمستجدين
+            <p class="red">عبر تعبئتك للنموذج ومن ثمّ قبولك معنا؛ ستظهر معلوماتك وحسابك بتويتر عبر قائمة البحث لسفرائنا،
+                ويمكن للمستجدين
                 البحث عن تخصصك أو جامعتك ليكون التواصل معك عبر حسابك بتويتر.</p>
             <!--        inside form main container -->
-            <!--        <div class="inside-form-container">-->
-            <!--            TODO: form action-->
-            <form action="" method="">
+            <div class="inside-form-container">
+                <!--            TODO: form action-->
+                <form action="" method="">
                 <span class="input-spans">
                     <label>الاسم الأول <span class="red">*</span></label>
                     <input class="input" type="text" required>
                 </span>
 
-                <span class="input-spans-left">
+                    <span class="input-spans-left">
                     <label>الاسم الأخير <span class="red">*</span></label>
                     <input class="input" type="text" required>
                 </span>
 
-                <span class="input-spans">
+                    <span class="input-spans">
                     <label>المدينة <span class="red">*</span></label>
                     <select name="city" required>
                         <option value="Dammam">الدمام</option>
@@ -114,7 +121,7 @@
                     </select>
                 </span>
 
-                <span class="input-spans-left">
+                    <span class="input-spans-left">
                     <label>الجامعة <span class="red">*</span></label>
                     <select name="university" required>
                         <option value="Imam">جامعة الإمام</option>
@@ -122,7 +129,7 @@
                     </select>
                 </span>
 
-                <span class="input-spans">
+                    <span class="input-spans">
                     <label>التخصص <span class="red">*</span></label>
                     <select name="major" required>
                         <option value="computer science">علوم الحاسب</option>
@@ -130,7 +137,7 @@
                     </select>
                 </span>
 
-                <span class="input-spans-left">
+                    <span class="input-spans-left">
                     <label>المستوى <span class="red">*</span></label>
                     <select name="level" required>
                         <option value="first">الأول</option>
@@ -138,12 +145,21 @@
                         <option value="other">آخر</option>
                     </select>
                 </span>
-                <span class="input-spans">
-                    <label>بريدك الإلكتروني <span class="red">*</span></label>
-                    <input class="input" type="email" required>
+
+                    <span class="input-spans">
+                    <label>بريدك الإلكتروني <span class="red">*</span> <span
+                            class="grey">لن يتم عرضه فقط للتواصل معك</span> </label>
+                    <input class="input" type="email" placeholder="example@domain.com" required>
                 </span>
 
-                <span class="input-spans-left">
+                    <span class="input-spans-left">
+                    <label>اختر صورة <span class="red">*</span>
+                        <!--                        <br>-->
+                    <label for="file" class="custom-file-input">اختيار
+                    <input type="file" id="file" required></label>
+                </span>
+
+                    <span class="input-spans">
                     <label>حسابك الاجتماعي <span class="red">*</span></label>
                     <br>
                     <span id="social-account">
@@ -154,22 +170,21 @@
                         </select>
                         <input class="left-float" style="width: 69%;" name="social-account" type="text" required>
                     </span>
-                    <!--                TODO: write js function for this button to insert the above span with id social-account-->
+                        <!--                TODO: write js function for this button to insert the above span with id social-account-->
                     <input class="button" type="button" value="إضافة حساب آخر" onclick="myFunction()">
                 </span>
 
-                <span class="area-span">
+                    <span class="area-span">
                     <label> ملاحظة / اقتراح</label>
                     <input class="input-area" name="suggestion" type="text">
                 </span>
 
-                <input class="button" type="reset" value="مسح الكل">
-                <input class="button left-float" type="submit" value="إرسال">
-            </form>
-            <!--        </div>-->
+                    <input class="button" type="reset" value="مسح الكل">
+                    <input class="button left-float" type="submit" value="إرسال">
+                </form>
+            </div>
         </div>
     </section>
-
 </div>
 <script>
     function showMediaForm() {
@@ -180,6 +195,7 @@
         document.getElementById("ambassador-tab").style.backgroundColor = "#F2F2F5";
         // document.getElementById("ambassador-tab").addEventListener("mouseover", am.style.backgroundColor = "#A8D2E3")
     }
+
     function showAmbassadorForm() {
         document.getElementById("ambassador").style.display = "block";
         document.getElementById("media").style.display = "none";

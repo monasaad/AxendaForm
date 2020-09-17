@@ -10,42 +10,41 @@
 <body>
 <header class="header">
     <a href="index.html" class="logo"> اكسندا</a>
-    <span class="tabs">
+    <span class="left-float">
             <a href="about.html">من نحن</a>
             <a href="#">تواصل معنا</a>
         </span>
 </header>
 
 <div class="container">
-    <div class="greyContainer">
-        <span class="insideGreyContainer">تواصل معنا الآن!🌟</span>
+    <div class="title">
+        <span class="inside-tab">تواصل معنا الآن!🌟</span>
     </div>
-    <div class="formContainer">
+    <div class="form-container">
         <p>يمكنك التواصل معنا عبر حسابنا بتويتر
-        <a href="https://twitter.com/AxendaTeam" style="text-decoration: underline">
-            AxendaTeam
-        </a></p>
+            <a href="https://twitter.com/AxendaTeam" style="text-decoration: underline">AxendaTeam</a></p>
         <p>أو اكتب رسالتك لنا عبر هذا النموذج.</p>
-
-        <div class="insideFormContainer">
+        <div class="inside-form-container">
             <form action="">
-                <div class="divPadding">فئة الرسالة <span class="red">*</span>
+                <span class="input-spans">
+                    <label>فئة الرسالة <span class="red">*</span></label>
                     <select name="msgtype" required>
                         <option value="suggestion">اقتراح</option>
                         <option value="other">أخرى</option>
                     </select>
-                </div>
+                </span>
 
-                <div class="divPadding">بريدك الإلكتروني <span class="red">*</span>
-                    <input class="input" type="email" required>
-                </div>
+                <span class="input-spans-left">
+                    <label>بريدك الإلكتروني <span class="red">*</span></label>
+                    <input class="input" type="email" placeholder="example@domain.com" required>
+                </span>
 
-
-                <div class="divPadding"> الرسالة<span class="red">*</span>
-                    <input class="inputArea" name="msg" type="text" required>
-                </div>
+                <span class="area-span">
+                    <label>الرسالة</label>
+                    <input class="input-area" name="suggestion" type="text">
+                </span>
                 <input class="button" type="reset" value="مسح الكل">
-                <input class="button leftFloat" type="submit" value="إرسال">
+                <input class="button left-float" type="submit" value="إرسال">
             </form>
         </div>
     </div>

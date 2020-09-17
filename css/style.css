@@ -1,43 +1,53 @@
-body{
+body {
     direction: rtl;
     font-family: "Tajawal";
     padding: 2% 5%; /* TRBL */
 }
-a{
+
+a {
     display: inline;
     text-decoration: none;
     color: black;
 }
-p{
+
+p {
     line-height: 1.5;
 }
 
 /**************** header style ****************/
-.header{
+.header {
     border-bottom-style: solid;
     border-bottom-width: 0.01cm;
     border-bottom-color: #F2F2F5;
 }
-.logo{
+
+.logo {
     display: inline;
     font-size: 1.5rem;
     font-weight: bold;
     /* color: #FFCB21; */
 }
-.nav-tabs{
-    /*text-justify: l;*/
-    float: left;
-}
 
 /**************** main container style ****************/
 
-.container{
+.container {
     padding-top: 5%;
     /*padding: 5% 7%;!* TRBL *!*/
 }
 
+.title {
+    width: 100%;
+    height: 6.5%;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    border-top-left-radius: 0.2cm;
+    border-top-right-radius: 0.2cm;
+    display: inline-block;
+    background-color: #F2F2F5;
+}
+
 /**************** main tabs style ****************/
-.main-tabs{
+.main-tabs {
     width: 50%;
     height: 6.5%;
     font-size: 1.5rem;
@@ -47,11 +57,11 @@ p{
     display: inline-block;
 }
 
-.yellow-tab{
+.yellow-tab {
     background-color: #FFCB21;
 }
 
-.grey-tab{
+.grey-tab {
     background-color: #F2F2F5;
 }
 
@@ -59,12 +69,12 @@ p{
 /*    background-color: #A8D2E3;*/
 /*}*/
 
-.inside-tab{
+.inside-tab {
     padding-right: 4%;
 }
 
 /**************** form main container style ****************/
-.form-container{
+.form-container {
     padding: 2% 5%;
     border-style: solid;
     border-width: 0cm 0.01cm 0.01cm 0.01cm; /*TRBL*/
@@ -72,42 +82,74 @@ p{
 }
 
 /**************** inside form main container style ****************/
-.inside-form-container{
+.inside-form-container {
     padding: 2% 5%;
 }
 
-.input-spans{
+.input-spans {
     display: inline-block;
     padding-bottom: 20px;
     width: 49%;
 }
-.input-spans-left{
+
+.input-spans-left {
     display: inline-block;
     padding-bottom: 20px;
     width: 49%;
     float: left;
 }
-.area-span{
+
+::placeholder {
+    font-family: "Tajawal";
+    padding-right: 2%;
+
+}
+
+.area-span {
     display: inline-block;
     padding-bottom: 20px;
     width: 100%;
 }
 
-.red{
+.red {
     color: #FF5C5C;
 }
 
-input{
+.grey {
+    font-size: 0.7rem;
+    color: dimgrey;
+}
+
+input {
     width: 100%;
     border-style: solid;
     border-color: #F2F2F5;
     border-radius: 0.1cm;
-    border-width: 0.02cm;
+    border-width: 0.05cm;
     height: 30px;
     -webkit-appearance: none;
 }
 
-select{
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-input {
+    width: 100%;
+    background-color: #FFCB21;
+    border-style: solid;
+    border-color: #FFCB21;
+    border-radius: 0.1cm;
+    border-width: 0.05cm;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+select {
     font-family: "Tajawal";
     width: 100%;
     border-style: solid;
@@ -123,21 +165,21 @@ select{
     -webkit-appearance: none;
 }
 
-.social-account{
+.social-account {
     width: 30%;
     display: inline-block;
 }
 
-.input-area{
+.input-area {
     width: 100%;
     height: 90px;
 }
 
-.left-float{
+.left-float {
     float: left;
 }
 
-.button{
+.button {
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: "Tajawal";
@@ -150,7 +192,7 @@ select{
     -webkit-appearance: none;
 }
 
-.button:hover{
+.button:hover {
     background-color: #65A7C3;
     color: white;
 }
@@ -158,25 +200,31 @@ select{
 
 /**************** RESPONSIVE ****************/
 @media screen and (max-width: 800px) {
-    body{
+    body {
         font-size: 0.9rem;
     }
-    .container{
+
+    .container {
         padding-top: 8%;
     }
-    .main-tabs{
+
+    .main-tabs {
         display: inline-block;
         width: 50%;
         height: 5%;
         font-size: 1.2rem;
         /*border-radius: 0.2cm;*/
     }
-    .input-spans, .input-spans-left{
+
+    /*.input{*/
+    /*    border-width: 0.1cm;*/
+    /*}*/
+    .input-spans, .input-spans-left {
         display: block;
         width: 100%;
     }
-    .button{
+
+    .button {
         margin-top: 10px;
     }
-
 }
