@@ -173,7 +173,7 @@
                         <input class="left-float" style="width: 69%;" name="social-account" type="text" required>
                     </span>
                         <!--                TODO: write js function for this button to insert the above span with id social-account-->
-                   <div id="add_social"></div>
+                   <div id="add_social" ></div>
                         <input class="button" type="button" value="إضافة حساب آخر" onclick="create_social()">
                 </span>
 
@@ -208,15 +208,23 @@
 
     function create_media(){
         var span=document.createElement("span");
-        span.innerHTML="<select name='social-account' class='social-account' required><option value='video'>فيديو</option><option value='audio'>بودكاست</option><option value='article'>مقالة</option></select> <input class='left-float' style='width: 69%;'' name='social-account'placeholder='اضف رابط الوسائط هنا' type='text' required>";
+        span.innerHTML="<span style='display: block; padding-top: 2% '><select name='social-account' class='social-account' required>" +
+                        "<option value='video'>فيديو</option> " +
+                        "<option value='audio'>بودكاست</option> " +
+                        "<option value='article'>مقالة</option></select> " +
+                        "<input class='left-float' style='width: 69%;' name='social-account'placeholder='اضف رابط الوسائط هنا' type='text' required></span> ";
         document.getElementById("add_media").appendChild(span);
-
     }
+
     function create_social(){
         var span=document.createElement("span");
-        span.innerHTML='<span class="input-spans"> <label>حسابك الاجتماعي <span class="red">*</span></label> <br> <span id="social-account"> <select name="social-account" class="social-account" required> <option value="twitter">تويتر</option> <option value="facebook">فيسبوك</option> <option value="linkedin">لنكدان</option> </select> <input class="left-float" style="width: 69%;" name="social-account" type="text" required> </span>';
+        // span.innerHTML='<span class="input-spans"> <label>حسابك الاجتماعي <span class="red">*</span></label> <br> <span id="social-account"> <select name="social-account" class="social-account" required> <option value="twitter">تويتر</option> <option value="facebook">فيسبوك</option> <option value="linkedin">لنكدان</option> </select> <input class="left-float" style="width: 69%;" name="social-account" type="text" required></span>';
+        span.innerHTML='<span style="display: block; padding-top: 2%" ><select name="social-account" class="social-account" required> ' +
+                        '<option value="twitter">تويتر</option> ' +
+                        '<option value="facebook">فيسبوك</option> ' +
+                        '<option value="linkedin">لنكدان</option></select> ' +
+                        '<input class="left-float" style="width: 69%;" name="social-account" type="text" required></span>';
         document.getElementById("add_social").appendChild(span);
-
     }
 </script>
 </body>
