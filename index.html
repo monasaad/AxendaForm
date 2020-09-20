@@ -11,9 +11,9 @@
 <header class="header">
     <a href="#" class="logo"> اكسندا</a>
     <span class="left-float">
-            <a href="about.html">من نحن</a>
-            <a href="contact.html">تواصل معنا</a>
-        </span>
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">تواصل معنا</a>
+    </span>
 </header>
 <div class="container">
     <!--    main tabs -->
@@ -38,15 +38,14 @@
             <!--        inside media form main container -->
             <div class="inside-form-container">
                 <!--            TODO: form action-->
-                <form action="" method="">
-                <span class="input-spans-left">
+                <form action="" method="post">
+                    <span class="input-spans-left">
                     <label>الجامعة <span class="red">*</span></label>
                     <select name="university" required>
                         <option value="Imam">جامعة الإمام</option>
                         <option value="other">آخر</option>
                     </select>
                 </span>
-
                     <span class="input-spans">
                     <label>التخصص <span class="red">*</span></label>
                     <select name="major" required>
@@ -54,35 +53,26 @@
                         <option value="other">آخر</option>
                     </select>
                 </span>
-
                     <span class="input-spans" id="media-type">
                     <label>نوع الوسائط<span class="red">*</span></label>
-                    <br>
+                   <br>
                     <span id="social">
-                        <select name="social-account" class="social-account" required>
+                        <select name="social-account" class="social-account" style="float: right" required>
                             <option value="video">فيديو</option>
                             <option value="audio">بودكاست</option>
                             <option value="article">مقالة</option>
                         </select>
-                        <input class="left-float" style="width: 69%;" name="social-account"
+                        <input style="width: 63%; margin-right: 4px; float: right;" name="social-account"
                                placeholder="اضف رابط الوسائط هنا" type="text" required>
                     </span>
-                        <!--                TODO: write js function for this button to insert the above span with id social-account-->
+
                     <div id="add_media"></div>
-                        <input id="addMedia" class="button" type="button" value="إضافة وسائط أخرى" onclick="create_media()">
-                    
+                    <input id="addMedia" class="button" type="button" value="إضافة وسائط أخرى" onclick="create_media()">
                     </span>
-
-                    <!--                <span class="input-spans-left" id="media-note">-->
-                    <!--                    <label>ملاحظة على الوسائط </label>-->
-                    <!--                    <input class="input" type="text">-->
-                    <!--                </span>-->
-
                     <span class="area-span">
-                    <label> ملاحظة / اقتراح</label>
-                    <input class="input-area" name="suggestion" type="text">
-                </span>
-
+                        <label> ملاحظة / اقتراح</label>
+                        <input class="input-area" name="suggestion" type="text">
+                    </span>
                     <input class="button" type="reset" value="مسح الكل">
                     <input class="button left-float" type="submit" value="إرسال">
                 </form>
@@ -104,17 +94,15 @@
             <!--        inside form main container -->
             <div class="inside-form-container">
                 <!--            TODO: form action-->
-                <form action="" method="">
-                <span class="input-spans">
+                <form action="" method="post">
+                    <span class="input-spans">
                     <label>الاسم الأول <span class="red">*</span></label>
                     <input class="input" type="text" required>
                 </span>
-
                     <span class="input-spans-left">
                     <label>الاسم الأخير <span class="red">*</span></label>
                     <input class="input" type="text" required>
                 </span>
-
                     <span class="input-spans">
                     <label>المدينة <span class="red">*</span></label>
                     <select name="city" required>
@@ -122,7 +110,6 @@
                         <option value="other">آخر</option>
                     </select>
                 </span>
-
                     <span class="input-spans-left">
                     <label>الجامعة <span class="red">*</span></label>
                     <select name="university" required>
@@ -130,7 +117,6 @@
                         <option value="other">آخر</option>
                     </select>
                 </span>
-
                     <span class="input-spans">
                     <label>التخصص <span class="red">*</span></label>
                     <select name="major" required>
@@ -138,7 +124,6 @@
                         <option value="other">آخر</option>
                     </select>
                 </span>
-
                     <span class="input-spans-left">
                     <label>المستوى <span class="red">*</span></label>
                     <select name="level" required>
@@ -147,41 +132,38 @@
                         <option value="other">آخر</option>
                     </select>
                 </span>
-
                     <span class="input-spans">
                     <label>بريدك الإلكتروني <span class="red">*</span> <span
                             class="grey">لن يتم عرضه فقط للتواصل معك</span> </label>
                     <input class="input" type="email" placeholder="example@domain.com" required>
                 </span>
-
                     <span class="input-spans-left">
-                    <label>اختر صورة <span class="red">*</span>
-                        <!--                        <br>-->
-                    <label for="file" class="custom-file-input">اختيار
-                    <input type="file" id="file" required></label>
-                </span>
-
-                    <span class="input-spans">
-                    <label>حسابك الاجتماعي <span class="red">*</span></label>
-                    <br>
-                    <span id="social-account">
-                        <select name="social-account" class="social-account" required>
-                            <option value="twitter">تويتر</option>
-                            <option value="facebook">فيسبوك</option>
-                            <option value="linkedin">لنكدان</option>
-                        </select>
-                        <input class="left-float" style="width: 69%;" name="social-account" type="text" required>
+                        <label>اختر صورة </label>
+                        <!--                            <span class="red">*</span>-->
+                        <label for="file" class="custom-file-input">اختيار
+                            <input type="file" id="file" required>
+                        </label>
                     </span>
-                        <!--                TODO: write js function for this button to insert the above span with id social-account-->
-                   <div id="add_social" ></div>
+                    <span class="input-spans">
+                        <label>حسابك الاجتماعي <span class="red">*</span></label>
+                        <br>
+                        <span id="social-account">
+                            <select name="social-account" class="social-account" style="float: right" required>
+                                <option value="twitter">تويتر</option>
+                                <option value="facebook">فيسبوك</option>
+                                <option value="linkedin">لنكدان</option>
+                            </select>
+                            <input style="width: 63%; margin-right: 4px; float: right;" name="social-account"
+                                   placeholder="اضف حسابك هنا" type="text" required>
+                        </span>
+
+                       <div id="add_social"></div>
                         <input class="button" type="button" value="إضافة حساب آخر" onclick="create_social()">
-                </span>
-
+                    </span>
                     <span class="area-span">
-                    <label> ملاحظة / اقتراح</label>
-                    <input class="input-area" name="suggestion" type="text">
-                </span>
-
+                        <label> ملاحظة / اقتراح</label>
+                        <input class="input-area" name="suggestion" type="text">
+                    </span>
                     <input class="button" type="reset" value="مسح الكل">
                     <input class="button left-float" type="submit" value="إرسال">
                 </form>
@@ -190,6 +172,7 @@
     </section>
 </div>
 <script>
+
     function showMediaForm() {
         // var am = document.getElementById("ambassador-tab");
         document.getElementById("ambassador").style.display = "none";
@@ -206,24 +189,33 @@
         document.getElementById("media-tab").style.backgroundColor = "#F2F2F5";
     }
 
-    function create_media(){
-        var span=document.createElement("span");
-        span.innerHTML="<span style='display: block; padding-top: 2% '><select name='social-account' class='social-account' required>" +
-                        "<option value='video'>فيديو</option> " +
-                        "<option value='audio'>بودكاست</option> " +
-                        "<option value='article'>مقالة</option></select> " +
-                        "<input class='left-float' style='width: 69%;' name='social-account'placeholder='اضف رابط الوسائط هنا' type='text' required></span> ";
+    function remove(selectedField) {
+        selectedField.closest('#counter').remove();
+    }
+
+    function create_media() {
+        var span = document.createElement("span");
+        span.setAttribute("id", 'counter');
+        span.innerHTML = "<span><select name='social-account' class='social-account' style='float: right; margin-top: 5px;' required>" +
+            "<option value='video'>فيديو</option> " +
+            "<option value='audio'>بودكاست</option> " +
+            "<option value='article'>مقالة</option></select> " +
+            "<input style='width: 63%; margin-right: 4px; margin-top: 5px; float: right' name='social-account' placeholder='اضف رابط الوسائط هنا' type='text' required>" +
+            "</span> " +
+            "<img style='width: 10px; display: block; margin-top: 15px; float: left' src='images/close.png' onclick='remove(this)'>";
         document.getElementById("add_media").appendChild(span);
     }
 
-    function create_social(){
-        var span=document.createElement("span");
-        // span.innerHTML='<span class="input-spans"> <label>حسابك الاجتماعي <span class="red">*</span></label> <br> <span id="social-account"> <select name="social-account" class="social-account" required> <option value="twitter">تويتر</option> <option value="facebook">فيسبوك</option> <option value="linkedin">لنكدان</option> </select> <input class="left-float" style="width: 69%;" name="social-account" type="text" required></span>';
-        span.innerHTML='<span style="display: block; padding-top: 2%" ><select name="social-account" class="social-account" required> ' +
-                        '<option value="twitter">تويتر</option> ' +
-                        '<option value="facebook">فيسبوك</option> ' +
-                        '<option value="linkedin">لنكدان</option></select> ' +
-                        '<input class="left-float" style="width: 69%;" name="social-account" type="text" required></span>';
+    function create_social() {
+        var span = document.createElement("span");
+        span.setAttribute("id", 'counter');
+        span.innerHTML = "<span><select name='social-account' class='social-account' style='float: right; margin-top: 5px;' required>" +
+            '<option value="twitter">تويتر</option> ' +
+            '<option value="facebook">فيسبوك</option> ' +
+            '<option value="linkedin">لنكدان</option></select> ' +
+            "<input style='width: 63%; margin-right: 4px; margin-top: 5px; float: right' name='social-account' placeholder='اضف حسابك هنا' type='text' required>" +
+            "</span> " +
+            "<img style='width: 10px; display: block; margin-top: 15px; float: left' src='images/close.png' onclick='remove(this)'>";
         document.getElementById("add_social").appendChild(span);
     }
 </script>
