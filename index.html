@@ -39,41 +39,66 @@
             <div class="inside-form-container">
                 <!--            TODO: form action-->
                 <form action="" method="post">
-                    <span class="input-spans-left">
-                    <label>الجامعة <span class="red">*</span></label>
-                    <select name="university" required>
-                        <option value="Imam">جامعة الإمام</option>
-                        <option value="other">آخر</option>
-                    </select>
-                </span>
+                    <!-- collage -->
                     <span class="input-spans">
-                    <label>التخصص <span class="red">*</span></label>
-                    <select name="major" required>
-                        <option value="computer science">علوم الحاسب</option>
-                        <option value="other">آخر</option>
-                    </select>
-                </span>
-                    <span class="input-spans" id="media-type">
-                    <label>نوع الوسائط<span class="red">*</span></label>
-                   <br>
-                    <span id="social">
-                        <select name="social-account" class="social-account" style="float: right" required>
-                            <option value="video">فيديو</option>
-                            <option value="audio">بودكاست</option>
-                            <option value="article">مقالة</option>
+                        <label>الجامعة <span class="red">*</span></label>
+                        <select name="university" required>
+                            <option value="Imam">جامعة الإمام</option>
+                            <option value="other">آخر</option>
                         </select>
-                        <input style="width: 63%; margin-right: 4px; float: right;" name="social-account"
-                               placeholder="اضف رابط الوسائط هنا" type="text" required>
                     </span>
 
-                    <div id="add_media"></div>
-                    <input id="addMedia" class="button" type="button" value="إضافة وسائط أخرى" onclick="create_media()">
+                    <!-- major -->
+                    <span class="input-spans-left">
+                        <label>التخصص <span class="red">*</span></label>
+                        <select name="major" required>
+                            <option value="computer science">علوم الحاسب</option>
+                            <option value="other">آخر</option>
+                        </select>
                     </span>
+
+                    <!-- media type -->
+                    <span class="input-spans" id="media-type">
+                        <label style="display: block">نوع الوسائط<span class="red">*</span></label>
+                        <span id="social">
+                            <select name="social-account" class="social-account" required>
+                                <option value="video">فيديو</option>
+                                <option value="audio">بودكاست</option>
+                                <option value="article">مقالة</option>
+                            </select>
+                            <input style="width: 69%; float: left;" name="social-account" placeholder="اضف رابط الوسائط هنا" type="text" required>
+                        </span>
+                    </span>
+
+                    <!-- media title -->
+                    <span class="input-spans-left" id="media-type">
+                        <label>عنوان الوسائط<span class="red">*</span></label>
+                        <input name="social-account" placeholder="" type="text" required>
+                    </span>
+
+                    <!-- media publisher -->
+                    <span class="input-spans" id="media-type">
+                        <label>اسم الناشر/ القناة<span class="red">*</span></label>
+                        <input name="social-account" placeholder="" type="text" required>
+                    </span>
+
+                    <!-- media description -->
+                    <span class="input-spans-left" id="media-type">
+                        <label>وصف <span class="grey">(اختياري)</span></label>
+                        <input placeholder="" type="text" required>
+                    </span>
+
+                    <!-- added media  -->
+                    <span id="add_media"></span>
+                    <input id="addMedia" class="button left-float" type="button" value="إضافة وسائط أخرى" onclick="create_media()">
+
+                    <!-- suggestion -->
                     <span class="area-span">
-                        <label> ملاحظة / اقتراح</label>
+                        <label>ملاحظة / اقتراح <span class="grey">(اختياري)</span></label>
                         <input class="input-area" name="suggestion" type="text">
                     </span>
-                    <input class="button" type="reset" value="مسح الكل">
+
+                    <input class="button" type="reset" style="background-color: #FF5C5C" value="مسح الكل">
                     <input class="button left-float" type="submit" value="إرسال">
                 </form>
             </div>
@@ -95,55 +120,70 @@
             <div class="inside-form-container">
                 <!--            TODO: form action-->
                 <form action="" method="post">
+                    <!-- first name -->
                     <span class="input-spans">
-                    <label>الاسم الأول <span class="red">*</span></label>
-                    <input class="input" type="text" required>
-                </span>
+                        <label>الاسم الأول <span class="red">*</span></label>
+                        <input class="input" type="text" required>
+                    </span>
+
+                    <!-- last name -->
                     <span class="input-spans-left">
-                    <label>الاسم الأخير <span class="red">*</span></label>
-                    <input class="input" type="text" required>
-                </span>
+                        <label>الاسم الأخير <span class="red">*</span></label>
+                        <input class="input" type="text" required>
+                    </span>
+
+                    <!-- city -->
                     <span class="input-spans">
-                    <label>المدينة <span class="red">*</span></label>
-                    <select name="city" required>
-                        <option value="Dammam">الدمام</option>
-                        <option value="other">آخر</option>
-                    </select>
-                </span>
+                        <label>المدينة <span class="red">*</span></label>
+                        <select name="city" required>
+                            <option value="Dammam">الدمام</option>
+                            <option value="other">آخر</option>
+                        </select>
+                    </span>
+
+                    <!-- university -->
                     <span class="input-spans-left">
-                    <label>الجامعة <span class="red">*</span></label>
-                    <select name="university" required>
-                        <option value="Imam">جامعة الإمام</option>
-                        <option value="other">آخر</option>
-                    </select>
-                </span>
+                        <label>الجامعة <span class="red">*</span></label>
+                        <select name="university" required>
+                            <option value="Imam">جامعة الإمام</option>
+                            <option value="other">آخر</option>
+                        </select>
+                    </span>
+
+                    <!-- major -->
                     <span class="input-spans">
-                    <label>التخصص <span class="red">*</span></label>
-                    <select name="major" required>
-                        <option value="computer science">علوم الحاسب</option>
-                        <option value="other">آخر</option>
-                    </select>
-                </span>
+                        <label>التخصص <span class="red">*</span></label>
+                        <select name="major" required>
+                            <option value="computer science">علوم الحاسب</option>
+                            <option value="other">آخر</option>
+                        </select>
+                    </span>
+
+                    <!-- year -->
                     <span class="input-spans-left">
-                    <label>المستوى <span class="red">*</span></label>
-                    <select name="level" required>
-                        <option value="first">الأول</option>
-                        <option value="second">الثاني</option>
-                        <option value="other">آخر</option>
-                    </select>
-                </span>
+                        <label>السنة الدراسية <span class="red">*</span></label>
+                        <select name="year" required>
+                            <option value="1">١</option>
+                            <option value="2">٢</option>
+                            <option value="3">٣</option>
+                        </select>
+                    </span>
+
+                    <!-- email -->
                     <span class="input-spans">
-                    <label>بريدك الإلكتروني <span class="red">*</span> <span
-                            class="grey">لن يتم عرضه فقط للتواصل معك</span> </label>
-                    <input class="input" type="email" placeholder="example@domain.com" required>
-                </span>
+                        <label>بريدك الإلكتروني <span class="red">* </span><span class="grey">لن يتم عرضه فقط للتواصل معك</span></label>
+                        <input class="input" type="email" placeholder="example@domain.com" required>
+                    </span>
+
+                    <!-- choose image -->
                     <span class="input-spans-left">
-                        <label>اختر صورة </label>
-                        <!--                            <span class="red">*</span>-->
+                        <label>اختر صورة <span class="grey">(اختياري)</span></label>
                         <label for="file" class="custom-file-input">اختيار
                             <input type="file" id="file" required>
                         </label>
                     </span>
+
+                    <!-- social account -->
                     <span class="input-spans">
                         <label>حسابك الاجتماعي <span class="red">*</span></label>
                         <br>
@@ -160,10 +200,13 @@
                        <div id="add_social"></div>
                         <input class="button" type="button" value="إضافة حساب آخر" onclick="create_social()">
                     </span>
+
+                    <!-- suggestion -->
                     <span class="area-span">
-                        <label> ملاحظة / اقتراح</label>
+                        <label>ملاحظة / اقتراح <span class="grey">(اختياري)</span></label>
                         <input class="input-area" name="suggestion" type="text">
                     </span>
+
                     <input class="button" type="reset" value="مسح الكل">
                     <input class="button left-float" type="submit" value="إرسال">
                 </form>
@@ -196,13 +239,37 @@
     function create_media() {
         var span = document.createElement("span");
         span.setAttribute("id", 'counter');
-        span.innerHTML = "<span><select name='social-account' class='social-account' style='float: right; margin-top: 5px;' required>" +
-            "<option value='video'>فيديو</option> " +
-            "<option value='audio'>بودكاست</option> " +
-            "<option value='article'>مقالة</option></select> " +
-            "<input style='width: 63%; margin-right: 4px; margin-top: 5px; float: right' name='social-account' placeholder='اضف رابط الوسائط هنا' type='text' required>" +
-            "</span> " +
-            "<img style='width: 10px; display: block; margin-top: 15px; float: left' src='images/close.png' onclick='remove(this)'>";
+        span.innerHTML =
+            "<div style='margin-top: 10px;'>" +
+            // "<hr style='margin-bottom: 30px; border: 0.01px solid #F2F2F5; display: block'>"+
+            "<span class='input-spans' id='media-type'>" +
+            "            <label style='display: block'>نوع الوسائط<span class='red'>*</span></label>" +
+            "            <span id='social'>" +
+            "                <select name='social-account' class='social-account' required>" +
+            "                    <option value='video'>فيديو</option>" +
+            "                    <option value='audio'>بودكاست</option>" +
+            "                    <option value='article'>مقالة</option>" +
+            "                </select>" +
+            "                <input style='width: 69%; float: left;' name='social-account' placeholder='اضف رابط الوسائط هنا' type='text' required>" +
+            "            </span>" +
+            "        </span>" +
+
+            "<span class='input-spans-left' id='media-type'>" +
+            "            <label>عنوان الوسائط<span class='red'>*</span></label>" +
+            "            <input name='social-account' placeholder='' type='text' required>" +
+            "        </span>" +
+
+            "<span class='input-spans' id='media-type'>" +
+            "            <label>اسم الناشر/ القناة<span class='red'>*</span></label>" +
+            "            <input name='social-account' placeholder='' type='text' required>" +
+            "        </span>"+
+
+            "<span class='input-spans-left' id='media-type'>" +
+            "            <label>وصف</label>" +
+            "            <input placeholder='' type='text' required>" +
+            "        </span>"+
+            "</div>"+
+            "<input id='deleteMedia' class='button' style='background-color: #FF5C5C;' type='button' value='حذف' onclick='remove(this)'>";
         document.getElementById("add_media").appendChild(span);
     }
 

@@ -14,6 +14,9 @@ p {
     line-height: 1.5;
 }
 
+label{
+    display: block;
+}
 /**************** header style ****************/
 .header {
     border-bottom-style: solid;
@@ -70,7 +73,7 @@ p {
 /*}*/
 
 .inside-tab {
-    padding-right: 4%;
+    padding-right: 5%;
 }
 
 /**************** form main container style ****************/
@@ -107,6 +110,7 @@ p {
 
 .area-span {
     display: inline-block;
+    margin-top: 15px;
     padding-bottom: 20px;
     width: 100%;
 }
@@ -177,11 +181,10 @@ select {
 
 .left-float {
     float: left;
-
 }
 
 .button {
-    margin-top: 10px;
+    margin-top: 1px;
     margin-bottom: 10px;
     font-family: "Tajawal";
     background-color: #FFCB21;
@@ -221,7 +224,7 @@ select {
     /*    border-width: 0.1cm;*/
     /*}*/
     .input-spans, .input-spans-left {
-        display: block;
+        display: inline-block;
         width: 100%;
     }
 
